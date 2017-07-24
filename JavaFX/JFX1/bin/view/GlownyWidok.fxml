@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="513.0" prefWidth="598.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controll.GlownyController">
+   <children>
+      <VBox layoutX="4.0" layoutY="14.0" prefHeight="440.0" prefWidth="110.0">
+         <children>
+            <Label fx:id="lbl1" onMouseEntered="#Lbl1Entered" onMouseExited="#LblExit" text="Lalbel 1" />
+            <Label fx:id="lbl2" onMouseEntered="#Lbl1Entered" onMouseExited="#LblExit" text="Lalbel 2" />
+            <Label fx:id="lbl3" onMouseEntered="#Lbl1Entered" onMouseExited="#LblExit" text="Lalbel 3" />
+            <Label fx:id="lbl4" onMouseEntered="#Lbl1Entered" onMouseExited="#LblExit" text="Lalbel 4" />
+            <Label fx:id="lbl5" onMouseEntered="#Lbl1Entered" onMouseExited="#LblExit" text="Lalbel 5" />
+            <CheckBox fx:id="chb1" mnemonicParsing="false" text="Check1" />
+            <CheckBox fx:id="chb2" mnemonicParsing="false" text="Check2" />
+            <CheckBox fx:id="chb3" mnemonicParsing="false" text="Check3" />
+            <RadioButton fx:id="Rab1" mnemonicParsing="false" text="Radio1">
+               <toggleGroup>
+                  <ToggleGroup fx:id="Gr1" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="Rab2" mnemonicParsing="false" text="Radio2" toggleGroup="$Gr1" />
+            <RadioButton fx:id="Rab3" mnemonicParsing="false" text="Radio3" toggleGroup="$Gr1" />
+            <RadioButton fx:id="RaB4" mnemonicParsing="false" text="Radio4" toggleGroup="$Gr1" />
+            <ComboBox fx:id="CoB1" prefWidth="150.0" promptText="Imiona" /> 
+           
+            
+         </children>
+      </VBox>
+      <HBox layoutX="4.0" layoutY="472.0" prefHeight="41.0" prefWidth="591.0">
+         <children>
+            <Button fx:id="btn1" mnemonicParsing="false" onMouseClicked="#presMouse" prefHeight="31.0" prefWidth="95.0" text="Get Text" />
+            <Button fx:id="btn2" mnemonicParsing="false" onMouseClicked="#ToUpperCase" text="ToUpperCase" />
+            <Button fx:id="btn3" mnemonicParsing="false" onMouseClicked="#ToLoverCase" text="ToLoverCase" />
+            <Button fx:id="btn4" mnemonicParsing="false" onMouseClicked="#ClearAll" text="Clear" />
+            <Button fx:id="btn5" mnemonicParsing="false" onMouseClicked="#CheckCheckBox" text="Check" />
+            <Button fx:id="btn6" mnemonicParsing="false" onMouseClicked="#ChechRadioB" text="CheckR" />
+            <Button mnemonicParsing="false" onMouseClicked="#CheckComboBox" text="CheckCoB" />
+         </children>
+      </HBox>
+      <TextArea fx:id="ta1" layoutX="114.0" layoutY="83.0" prefHeight="377.0" prefWidth="463.0" />
+      <MenuBar layoutX="114.0" layoutY="21.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="Exit" mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem fx:id="Clear" mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem fx:id="About" mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+    
+   </children>
+</AnchorPane>

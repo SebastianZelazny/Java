@@ -1,0 +1,2 @@
+Imie: ala Nazwisko kot Wyplata: 100.0;
+Imie: kot Nazwisko ala Wyplata: 1000.0;

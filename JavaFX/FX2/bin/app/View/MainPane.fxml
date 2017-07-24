@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.Controller.MainController">
+   <children>
+      <VBox layoutX="486.0" layoutY="14.0" prefHeight="377.0" prefWidth="100.0">
+         <children>
+            <Button fx:id="bt1" mnemonicParsing="false" prefHeight="31.0" prefWidth="106.0" text="BTN1" />
+            <Button fx:id="bt2" mnemonicParsing="false" prefHeight="31.0" prefWidth="99.0" text="BTN2" />
+            <Button fx:id="bt3" mnemonicParsing="false" prefHeight="31.0" prefWidth="101.0" text="BTN3" />
+            <Button fx:id="bt4" mnemonicParsing="false" prefHeight="31.0" prefWidth="105.0" text="BTN4" />
+         </children>
+      </VBox>
+      <TextArea fx:id="ta1" layoutX="14.0" layoutY="20.0" prefHeight="348.0" prefWidth="456.0" promptText="Tu mozesz wpisac tekst" />
+   </children>
+</AnchorPane>
